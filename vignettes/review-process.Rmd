@@ -1,6 +1,6 @@
 ---
 title: "Review Process for Biostatistical Products"
-date: "March 25, 2025"
+date: "April 4, 2025"
 author: Mark Jones
 output: rmarkdown::html_vignette
 vignette: >
@@ -14,77 +14,143 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
+
+colorize <- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{%s}", color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'>%s</span>", color,
+      x)
+  } else x
+}
 ```
 
 ```{r setup}
-library(templastats)
+library(statTemplates)
 ```
 
 
 ## Introduction
 
-This document provides an overview on the review process for biostatistical products, including statistical analysis plans, protocol contributions, trial reports, code, metadata, and data cleaning procedures. 
-The goal is to improve quality, consistency, and traceability within a structured quality management framework.
+This document provides an overview on the review process for biostatistical products, including analysis plans, protocol methods sections, trial reports, etc.
 
-For code reviews, the github pull request process is still likely preferable to using this process, but some of these templates might provide some useful auxiliary high level information about the initiation of a code review and the updates made. 
-The details of the review specifics are still best managed in git.
+The process involves producing and retaining records of the reviews.
+The goal is to improve quality, consistency, and traceability within a structured quality management framework.
+Formal reviews are also useful because they allow a structured forum for everyone to learn and be supported.
+
+For code reviews, the github pull request process is more appropriate, but some of the review process templates could provide useful high level auxilary information to capture the initiation and progression of a code review and the updates made.
 
 ## Overview of the Review Process
 
 The review process consists of three main stages:
 
-1. **Review request** – Initiating the review and notifying reviewers.
-2. **Review update notification** – Providing status updates, handling changes, and scheduling discussions if needed.
-3. **Review release notification** – Finalising and approving the reviewed document for use.
+1. **Review request** – Initiate the review, notify reviewers, set up meetings, if required.
+2. **Review update notification** – Summarise the review and outcome, capture a high-level description of the update, schedule follow up discussions.
+3. **Review release notification** – Record the release of a stats product now approved for broadscale adoption.
 
 Multiple rounds might be needed to get to a satisfactory release status.
 Each stage has an associated template to standardize documentation and ensure evidence of review.
 
-## Review Procedure
+## Suggested directory layout
 
-The stats products have the following release state transition:
+The most convenient way to store the review records is most likely within the project directory, 
+for example:
 
 ```
-[DRAFT] -> [REVISED DRAFT] -> [RELEASED]
+. 
+|-- review
+    |-- review-proc-request-20250404.md
+    |-- review-proc-update-20250420.md
+    |-- review-proc-update-20250430.md
+|-- versions
+    |-- review-request-template-v0.01.md
+    |-- review-update-template-v0.01.md
+    |-- review-release-template-v0.01.md
+    |-- other stat products to review...
+```
+
+The review folder contains the records pertaining to various review steps and the versions folder contain the products that were the focus of the review.
+The idea is that the entire set of deliverables subject to review would be retained.
+Clearly, this versioning is already implicit when using git, but not everyone knows how to use an RCS and so the approach is a compromise.
+This also makes the review steps explicit and transparent for new people joining the project.
+
+The file naming and document management sop (doc number 1.3.01) lays out the file naming conventions including versioning.
+You can find the sop in teams hosted at the kids under the "Adaptive health intelligence" team. 
+The directory of the sop:
+Documents > General > Resource AHI > Clinical Research Management > AHI Documentation & processes > Approved
+
+The file naming sop recommends snakecase "an_example", but kebab-case "an-example" is generally more widely adopted in development circles and totally acceptable.
+
+For version suffixes, the formatting is basically vmajor.minor.
+Draft versions use the second delimeter, e.g. v0.1 onwards.
+The file naming sop recommends single digits but this is unnecessarily restrictive and a double digit versioning might be preferred to avoid dissonance when sorting files.
+For releases, the form would be v1.0 and for subsequent drafts, v1.1, v1.2 etc to the next release v2.0.
+
+As a general heuristic, use some sensible structured naming convention, version and date as a belt-and-braces approach but either or will probably suffice, e.g.:
+
+  ```
+  [DocumentType]_[StudyName]_[Version]_[YYYYMMDD].[ext]
+  Example: SAP_Trial123_v0.1_20250325.docx
+  ```
+
+`r colorize("Note:", "red")`
+
+```{r, echo = F, eval = T}
+textout <- 'We could adopt git tags to identify review products if that was broadly accepted.
+Tags/releases are equally traceable and arguably better practice/more convenient for developers, but not everyone knows how to navigate these systems.'
+```
+
+`r colorize(textout, "red")`
+
+---
+
+
+## Review Procedure
+
+The status of stats products under development have the following state transition:
+
+```
+[DRAFT] -> [REVISED DRAFT] -> [RELEASE]
 ```
 
 + Draft: Version distributed to reviewers for feedback.
 + Revised Draft: Updated with reviewer comments, may require another round of review.
-+ Final Review: Ready for final quality check before release.
-+ Released: Approved and archived as the official version.
++ Release: Official work version, reviewed and approved by reviewers.
+
++ At some point in the future, it may be necessary to return to a draft stage and the cycle continues.
 
 ### **Step 1: Review request**
 
 #### Purpose:
 
-To request a review, assign reviewers, and outline expectations.
++ Request a review, assign reviewers, outline expectations.
 
-#### Actions:
+#### Pre-requisites:
 
-1. Author completes the **Review request** template.
-2. Amongst other things, the request should specify:
+1. Author(s) has developed stats product for review
+
+#### Steps:
+
+1. Author completes the **Review request** template that includes:
    - Document details (title, type, version, author, deadline)
    - Reviewers assigned
    - Scope of the review
    - Storage location & naming conventions
    - Whether a review meeting is required
-   The template provides prompts to guide you on what is needed.
-3. The author sends out the request to reviewers via email along with an invite if a meeting is required
-4. The review request document and the products (see earlier note about code) to be reviewed are stored in the appropriate repository with an agreed naming convention.
+   
+    The template provides prompts to guide you on what is needed and gaps for adding more detail.
+   
+2. Author sends out the request to reviewers via email along with an invite if a meeting is required. 
+3. The review request record and the review product(s) (see earlier note about code) to be reviewed are stored appropriately, e.g. see directory layout earlier
 
-Note - The reviewers will have been lined up prior to the preparation of the review request document.
-Either way, the reviewers should respond to the  review request by indicating they can complete the review by the deadline or arrange a revised deadline.
-Reviewers can delegate to other reviewers but this change should be noted in the review update notification (see below).
-Following the review request, the reviewers start with the review and, if necessary, meet to discuss the products at the nominated date/time.
+In an ideal world:
 
-#### Storage & Naming:
-
-- Store in a central repository? (e.g., SharePoint, GitHub, internal drive).
-- Use a structured naming convention:
-  ```
-  [DocumentType]_[StudyName]_[Version]_[YYYYMMDD].[ext]
-  Example: AnalysisPlan_Trial123_v1.0_20250325.docx
-  ```
++ The subject of the email starts with *Review request: document name...* so that reviews can be easily found in the future. 
++ You can attach the review product or direct someone to the source, but the source location should always be provided in full.
++ The reviewers will have been contacted prior to the review request being sent out.
++ The reviewers respond to the  review request by indicating they can complete the review by the deadline or arrange a revised deadline.
++ Reviewers can delegate to other reviewers but this change should be noted in the review update notification (see below).
++ The reviewers start the review and, if necessary, get ready to meet to discuss the products at the nominated date/time.
 
 ---
 
@@ -92,22 +158,55 @@ Following the review request, the reviewers start with the review and, if necess
 
 #### Purpose:
 
-To track progress, handle revisions, and document discussions.
++ Record progression, note revisions required and adopted, document discussions/decisions.
 
-#### Actions:
+#### Pre-requisites:
 
-1. Following the review request (and meeting, if applicable) the reviewers provide feedback via:
+1. Reviewers have provided feedback via:
    - Tracked changes (Word documents)
    - Comments (SharePoint, Google Docs)
-   - GitHub Issues/Pull Requests (for code reviews including when documents written in Rmd/qmd)
-   The review comments should be provided prior to any meetings so that the author has time to consider the feedback.
-2. The author or review coordinator updates the **Review update** template, including:
-   - Summary of the review feedback
-   - Status of the review
-   - Review meeting details (if applicable)
-3. If a meeting is held, key discussion points and outcomes are documented in the **Review update**.
-4. The nominated status update of the document is noted
-5. The update notification and review product is stored in the repository with a new version number (e.g., v1.1, v1.2).
+   
+    The review comments would be provided prior to any meetings so that the author has time to consider the feedback.
+
+2. Ideally, reviewers and author have met to discuss the feedback in detail
+3. Author has collated feedback and integrated into the product in a way that maintains both the reviewer feedback and the responses.
+
+#### Steps:
+
+1. Author collates and incorporates their response to feedback in the review product, which will now sit at *revised draft* state
+2. Author updates the **Review update** template, including:
+   - A *summary* of review feedback which could be a minimal as "no comments from reviewers" or "minor edits to grammar and spelling noted by reviewers" to something more substantial such as a narrative summary of the issues identified
+   - A summary of the way that the author has responded to the feedback, e.g. "accepted all comments" or perhaps more substantive and can reference the updated review product if necessary
+   - The outcome of the review (e.g. accepted, conditionally accepted, major revisions required)
+2. Author sends out the update notification to reviewers via email.
+3. Reviewers check that their comments have been addressed and respond to the notification to confirm.
+
+    If the reviewers believe that their comments have not been adequately addressed then they contact the author to discuss and on resolution of this a new update notification may be required.
+    The document may stay in a revised draft status for some time undergoing multiple rounds of review.
+    
+4. The review update record and the updated review product(s) are stored appropriately, e.g. see directory layout earlier.
+
+In an ideal world:
+
++ The subject of the email starts with *Review update notification: document name...* so that reviews can be easily found in the future. 
+
+`r colorize("Issues:", "red")`
+
+
+```{r, echo = F, eval = T}
+textout <- '1. With a shared word document that is the primary source, sending back a document with both feedback and responses is straight forward in that the track-changes can be left enabled and the responses to the updates made in the main text for the reviewers to consider.
+However, if the word document is generated from a markdown or latex file, this is less straight forward and some form of diff highlighting may be required.
+We will need to discuss how to best do this.'
+```
+
+`r colorize(textout, "red")`
+
+```{r, echo = F, eval = T}
+textout <- '2. Feedback to google docs and the like tends to be an organic back and forth with a number of people editing a document simultaneously in a somewhat uncontrolled fashion. This review process is much more deliberately sequential and that might cause people some headaches. However, it might also help with managing expectations of response timelines and having greater shared understanding on the status and approach at any given time.'
+```
+
+`r colorize(textout, "red")`
+
 
 ---
 
@@ -115,13 +214,28 @@ To track progress, handle revisions, and document discussions.
 
 #### Purpose:
 
-Notification of transition of the product status
++ Record that the review has reached consensus position that the review product has reached an acceptable state to be adopted
+
+#### Pre-requisites:
+
++ All feedback has been addressed and a clean version of the review product prepared
 
 #### Actions:
 
-1. The author incorporates the reviewer feedback and sends a review release notification with the updated status of the 
-2. The reviewers ensure that any feedback has been adequately addressed. If anything is missing, the reviewers can request that defects be revisited, which necessitates revision and another update notification. If all feedback has been addressed no further updates are required.
-3. The approved document is stored in the designated repository with the relevant version number (e.g., v2.0, vFinal) and the updated status.
+1. Author completes release notification with the updated version of the product(s) and sends out to reviewers along with a clean version of the product.
+2. The approved document is stored in the designated repository with the relevant version number (e.g., v2.0) and the updated status.
+
+In an ideal world:
+
++ The subject of the email starts with *Release notification: document name...* so that reviews can be easily found in the future. 
+
+`r colorize("Issues:", "red")`
+
+```{r, echo = F, eval = T}
+textout <- '1. By this point, the review product should be fairly solid, but mistakes happen and if something has slipped through, in which case the reviewers may need to notify the author and the author update the review product and re-issue the release notification.'
+```
+
+`r colorize(textout, "red")`
 
 ---
 
@@ -149,17 +263,6 @@ A review meeting should be held if:
 
 ---
 
-## 5. Summary of Templates
-
-| Template | Purpose |
-|----------|---------|
-| **Review request** | Initiates the review process, assigns reviewers, and provides document details. |
-| **Review update notification** | Tracks review progress, logs outcome of review and what is to be done, and includes meeting details. |
-| **Review release notification** | Confirms final approval, status and details of the reviewed document. |
-
-These templates ensure a structured, auditable review process that aligns with quality management standards.
-
----
 
 ## 6. Conclusion
 

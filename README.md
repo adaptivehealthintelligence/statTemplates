@@ -23,20 +23,20 @@ After cloning the package from github:
 ```
 library(devtools)
 document()
-devtools::install(build_vignettes = TRUE)
+devtools::install(build_vignettes = TRUE, upgrade = "never")
 ```
 
 or just install direct from github.
 
 ```
 install.packages(c("devtools"))
-devtools::install_github("maj-biostat/templastats")
+devtools::install_github("maj-biostat/statTemplates")
 ```
 
-If you want to ensure that `templastats` is always loaded then include 
+If you want to ensure that `statTemplates` is always loaded then include 
 
 ```
-library(templastats)
+library(statTemplates)
 ```
 
 in your `.Rprofile` file.
