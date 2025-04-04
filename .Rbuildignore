@@ -1,3 +1,6 @@
 ^statTemplates\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
+^review$
+^versions$
+^_extensions$
