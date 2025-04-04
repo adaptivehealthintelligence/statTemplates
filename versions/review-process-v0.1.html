@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="author" content="Mark Jones" />
+
+<meta name="date" content="2025-04-04" />
+
+<title>Review Process for Biostatistical Products</title>
+
+<script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
+// be compatible with the behavior of Pandoc < 2.8).
+document.addEventListener('DOMContentLoaded', function(e) {
+  var hs = document.querySelectorAll("div.section[class*='level'] > :first-child");
+  var i, h, a;
+  for (i = 0; i < hs.length; i++) {
+    h = hs[i];
+    if (!/^h[1-6]$/i.test(h.tagName)) continue;  // it should be a header h1-h6
+    a = h.attributes;
+    while (a.length > 0) h.removeAttribute(a[0].name);
+  }
+});
+</script>
+
+<style type="text/css">
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+
+<style type="text/css">
+code {
+white-space: pre;
+}
+.sourceCode {
+overflow: visible;
+}
+</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    var j = 0;
+    while (j < rules.length) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") {
+        j++;
+        continue;
+      }
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') {
+        j++;
+        continue;
+      }
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+
+
+
+
+<style type="text/css">body {
+background-color: #fff;
+margin: 1em auto;
+max-width: 700px;
+overflow: visible;
+padding-left: 2em;
+padding-right: 2em;
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.35;
+}
+#TOC {
+clear: both;
+margin: 0 0 10px 10px;
+padding: 4px;
+width: 400px;
+border: 1px solid #CCCCCC;
+border-radius: 5px;
+background-color: #f6f6f6;
+font-size: 13px;
+line-height: 1.3;
+}
+#TOC .toctitle {
+font-weight: bold;
+font-size: 15px;
+margin-left: 5px;
+}
+#TOC ul {
+padding-left: 40px;
+margin-left: -1.5em;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#TOC ul ul {
+margin-left: -2em;
+}
+#TOC li {
+line-height: 16px;
+}
+table {
+margin: 1em auto;
+border-width: 1px;
+border-color: #DDDDDD;
+border-style: outset;
+border-collapse: collapse;
+}
+table th {
+border-width: 2px;
+padding: 5px;
+border-style: inset;
+}
+table td {
+border-width: 1px;
+border-style: inset;
+line-height: 18px;
+padding: 5px 5px;
+}
+table, table th, table td {
+border-left-style: none;
+border-right-style: none;
+}
+table thead, table tr.even {
+background-color: #f7f7f7;
+}
+p {
+margin: 0.5em 0;
+}
+blockquote {
+background-color: #f6f6f6;
+padding: 0.25em 0.75em;
+}
+hr {
+border-style: solid;
+border: none;
+border-top: 1px solid #777;
+margin: 28px 0;
+}
+dl {
+margin-left: 0;
+}
+dl dd {
+margin-bottom: 13px;
+margin-left: 13px;
+}
+dl dt {
+font-weight: bold;
+}
+ul {
+margin-top: 0;
+}
+ul li {
+list-style: circle outside;
+}
+ul ul {
+margin-bottom: 0;
+}
+pre, code {
+background-color: #f7f7f7;
+border-radius: 3px;
+color: #333;
+white-space: pre-wrap; 
+}
+pre {
+border-radius: 3px;
+margin: 5px 0px 10px 0px;
+padding: 10px;
+}
+pre:not([class]) {
+background-color: #f7f7f7;
+}
+code {
+font-family: Consolas, Monaco, 'Courier New', monospace;
+font-size: 85%;
+}
+p > code, li > code {
+padding: 2px 0px;
+}
+div.figure {
+text-align: center;
+}
+img {
+background-color: #FFFFFF;
+padding: 2px;
+border: 1px solid #DDDDDD;
+border-radius: 3px;
+border: 1px solid #CCCCCC;
+margin: 0 5px;
+}
+h1 {
+margin-top: 0;
+font-size: 35px;
+line-height: 40px;
+}
+h2 {
+border-bottom: 4px solid #f7f7f7;
+padding-top: 10px;
+padding-bottom: 2px;
+font-size: 145%;
+}
+h3 {
+border-bottom: 2px solid #f7f7f7;
+padding-top: 10px;
+font-size: 120%;
+}
+h4 {
+border-bottom: 1px solid #f7f7f7;
+margin-left: 8px;
+font-size: 105%;
+}
+h5, h6 {
+border-bottom: 1px solid #ccc;
+font-size: 105%;
+}
+a {
+color: #0033dd;
+text-decoration: none;
+}
+a:hover {
+color: #6666ff; }
+a:visited {
+color: #800080; }
+a:visited:hover {
+color: #BB00BB; }
+a[href^="http:"] {
+text-decoration: underline; }
+a[href^="https:"] {
+text-decoration: underline; }
+
+code > span.kw { color: #555; font-weight: bold; } 
+code > span.dt { color: #902000; } 
+code > span.dv { color: #40a070; } 
+code > span.bn { color: #d14; } 
+code > span.fl { color: #d14; } 
+code > span.ch { color: #d14; } 
+code > span.st { color: #d14; } 
+code > span.co { color: #888888; font-style: italic; } 
+code > span.ot { color: #007020; } 
+code > span.al { color: #ff0000; font-weight: bold; } 
+code > span.fu { color: #900; font-weight: bold; } 
+code > span.er { color: #a61717; background-color: #e3d2d2; } 
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">Review Process for Biostatistical
+Products</h1>
+<h4 class="author">Mark Jones</h4>
+<h4 class="date">April 4, 2025</h4>
+
+
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">library</span>(statTemplates)</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="co">#&gt; Loading 0.0.0.9000 of statTemplates</span></span></code></pre></div>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>This document provides an overview on the review process for
+biostatistical products, including analysis plans, protocol methods
+sections, trial reports, etc.</p>
+<p>The process involves producing and retaining records of the reviews.
+The goal is to improve quality, consistency, and traceability within a
+structured quality management framework. Formal reviews are also useful
+because they allow a structured forum for everyone to learn and be
+supported.</p>
+<p>For code reviews, the github pull request process is more
+appropriate, but some of the review process templates could provide
+useful high level auxilary information to capture the initiation and
+progression of a code review and the updates made.</p>
+</div>
+<div id="overview-of-the-review-process" class="section level2">
+<h2>Overview of the Review Process</h2>
+<p>The review process consists of three main stages:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Review request</strong> – Initiate the review, notify
+reviewers, set up meetings, if required.</li>
+<li><strong>Review update notification</strong> – Summarise the review
+and outcome, capture a high-level description of the update, schedule
+follow up discussions.</li>
+<li><strong>Review release notification</strong> – Record the release of
+a stats product now approved for broadscale adoption.</li>
+</ol>
+<p>Multiple rounds might be needed to get to a satisfactory release
+status. Each stage has an associated template to standardize
+documentation and ensure evidence of review.</p>
+</div>
+<div id="suggested-directory-layout" class="section level2">
+<h2>Suggested directory layout</h2>
+<p>The most convenient way to store the review records is most likely
+within the project directory, for example:</p>
+<pre><code>. 
+|-- review
+    |-- review-proc-request-20250404.md
+    |-- review-proc-update-20250420.md
+    |-- review-proc-update-20250430.md
+|-- versions
+    |-- review-request-template-v0.01.md
+    |-- review-update-template-v0.01.md
+    |-- review-release-template-v0.01.md
+    |-- other stat products to review...</code></pre>
+<p>The review folder contains the records pertaining to various review
+steps and the versions folder contain the products that were the focus
+of the review. The idea is that the entire set of deliverables subject
+to review would be retained. Clearly, this versioning is already
+implicit when using git, but not everyone knows how to use an RCS and so
+the approach is a compromise. This also makes the review steps explicit
+and transparent for new people joining the project.</p>
+<p>The file naming and document management sop (doc number 1.3.01) lays
+out the file naming conventions including versioning. You can find the
+sop in teams hosted at the kids under the “Adaptive health intelligence”
+team. The directory of the sop: Documents &gt; General &gt; Resource AHI
+&gt; Clinical Research Management &gt; AHI Documentation &amp; processes
+&gt; Approved</p>
+<p>The file naming sop recommends snakecase “an_example”, but kebab-case
+“an-example” is generally more widely adopted in development circles and
+totally acceptable.</p>
+<p>For version suffixes, the formatting is basically vmajor.minor. Draft
+versions use the second delimeter, e.g. v0.1 onwards. The file naming
+sop recommends single digits but this is unnecessarily restrictive and a
+double digit versioning might be preferred to avoid dissonance when
+sorting files. For releases, the form would be v1.0 and for subsequent
+drafts, v1.1, v1.2 etc to the next release v2.0.</p>
+<p>As a general heuristic, use some sensible structured naming
+convention, version and date as a belt-and-braces approach but either or
+will probably suffice, e.g.:</p>
+<pre><code>[DocumentType]_[StudyName]_[Version]_[YYYYMMDD].[ext]
+Example: SAP_Trial123_v0.1_20250325.docx</code></pre>
+<p><span style="color: red;">Note:</span></p>
+<p><span style="color: red;">We could adopt git tags to identify review
+products if that was broadly accepted. Tags/releases are equally
+traceable and arguably better practice/more convenient for developers,
+but not everyone knows how to navigate these systems.</span></p>
+<hr />
+</div>
+<div id="review-procedure" class="section level2">
+<h2>Review Procedure</h2>
+<p>The status of stats products under development have the following
+state transition:</p>
+<pre><code>[DRAFT] -&gt; [REVISED DRAFT] -&gt; [RELEASE]</code></pre>
+<ul>
+<li><p>Draft: Version distributed to reviewers for feedback.</p></li>
+<li><p>Revised Draft: Updated with reviewer comments, may require
+another round of review.</p></li>
+<li><p>Release: Official work version, reviewed and approved by
+reviewers.</p></li>
+<li><p>At some point in the future, it may be necessary to return to a
+draft stage and the cycle continues.</p></li>
+</ul>
+<div id="step-1-review-request" class="section level3">
+<h3><strong>Step 1: Review request</strong></h3>
+<div id="purpose" class="section level4">
+<h4>Purpose:</h4>
+<ul>
+<li>Request a review, assign reviewers, outline expectations.</li>
+</ul>
+</div>
+<div id="pre-requisites" class="section level4">
+<h4>Pre-requisites:</h4>
+<ol style="list-style-type: decimal">
+<li>Author(s) has developed stats product for review</li>
+</ol>
+</div>
+<div id="steps" class="section level4">
+<h4>Steps:</h4>
+<ol style="list-style-type: decimal">
+<li><p>Author completes the <strong>Review request</strong> template
+that includes:</p>
+<ul>
+<li>Document details (title, type, version, author, deadline)</li>
+<li>Reviewers assigned</li>
+<li>Scope of the review</li>
+<li>Storage location &amp; naming conventions</li>
+<li>Whether a review meeting is required</li>
+</ul>
+<p>The template provides prompts to guide you on what is needed and gaps
+for adding more detail.</p></li>
+<li><p>Author sends out the request to reviewers via email along with an
+invite if a meeting is required.</p></li>
+<li><p>The review request record and the review product(s) (see earlier
+note about code) to be reviewed are stored appropriately, e.g. see
+directory layout earlier</p></li>
+</ol>
+<p>In an ideal world:</p>
+<ul>
+<li>The subject of the email starts with <em>Review request: document
+name…</em> so that reviews can be easily found in the future.</li>
+<li>You can attach the review product or direct someone to the source,
+but the source location should always be provided in full.</li>
+<li>The reviewers will have been contacted prior to the review request
+being sent out.</li>
+<li>The reviewers respond to the review request by indicating they can
+complete the review by the deadline or arrange a revised deadline.</li>
+<li>Reviewers can delegate to other reviewers but this change should be
+noted in the review update notification (see below).</li>
+<li>The reviewers start the review and, if necessary, get ready to meet
+to discuss the products at the nominated date/time.</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="step-2-review-update-notification" class="section level3">
+<h3><strong>Step 2: Review update notification</strong></h3>
+<div id="purpose-1" class="section level4">
+<h4>Purpose:</h4>
+<ul>
+<li>Record progression, note revisions required and adopted, document
+discussions/decisions.</li>
+</ul>
+</div>
+<div id="pre-requisites-1" class="section level4">
+<h4>Pre-requisites:</h4>
+<ol style="list-style-type: decimal">
+<li><p>Reviewers have provided feedback via:</p>
+<ul>
+<li>Tracked changes (Word documents)</li>
+<li>Comments (SharePoint, Google Docs)</li>
+</ul>
+<p>The review comments would be provided prior to any meetings so that
+the author has time to consider the feedback.</p></li>
+<li><p>Ideally, reviewers and author have met to discuss the feedback in
+detail</p></li>
+<li><p>Author has collated feedback and integrated into the product in a
+way that maintains both the reviewer feedback and the
+responses.</p></li>
+</ol>
+</div>
+<div id="steps-1" class="section level4">
+<h4>Steps:</h4>
+<ol style="list-style-type: decimal">
+<li><p>Author collates and incorporates their response to feedback in
+the review product, which will now sit at <em>revised draft</em>
+state</p></li>
+<li><p>Author updates the <strong>Review update</strong> template,
+including:</p>
+<ul>
+<li>A <em>summary</em> of review feedback which could be a minimal as
+“no comments from reviewers” or “minor edits to grammar and spelling
+noted by reviewers” to something more substantial such as a narrative
+summary of the issues identified</li>
+<li>A summary of the way that the author has responded to the feedback,
+e.g. “accepted all comments” or perhaps more substantive and can
+reference the updated review product if necessary</li>
+<li>The outcome of the review (e.g. accepted, conditionally accepted,
+major revisions required)</li>
+</ul></li>
+<li><p>Author sends out the update notification to reviewers via
+email.</p></li>
+<li><p>Reviewers check that their comments have been addressed and
+respond to the notification to confirm.</p>
+<p>If the reviewers believe that their comments have not been adequately
+addressed then they contact the author to discuss and on resolution of
+this a new update notification may be required. The document may stay in
+a revised draft status for some time undergoing multiple rounds of
+review.</p></li>
+<li><p>The review update record and the updated review product(s) are
+stored appropriately, e.g. see directory layout earlier.</p></li>
+</ol>
+<p>In an ideal world:</p>
+<ul>
+<li>The subject of the email starts with <em>Review update notification:
+document name…</em> so that reviews can be easily found in the
+future.</li>
+</ul>
+<p><span style="color: red;">Issues:</span></p>
+<p><span style="color: red;">1. With a shared word document that is the
+primary source, sending back a document with both feedback and responses
+is straight forward in that the track-changes can be left enabled and
+the responses to the updates made in the main text for the reviewers to
+consider. However, if the word document is generated from a markdown or
+latex file, this is less straight forward and some form of diff
+highlighting may be required. We will need to discuss how to best do
+this.</span></p>
+<p><span style="color: red;">2. Feedback to google docs and the like
+tends to be an organic back and forth with a number of people editing a
+document simultaneously in a somewhat uncontrolled fashion. This review
+process is much more deliberately sequential and that might cause people
+some headaches. However, it might also help with managing expectations
+of response timelines and having greater shared understanding on the
+status and approach at any given time.</span></p>
+<hr />
+</div>
+</div>
+<div id="step-3-review-release-notification" class="section level3">
+<h3><strong>Step 3: Review release notification</strong></h3>
+<div id="purpose-2" class="section level4">
+<h4>Purpose:</h4>
+<ul>
+<li>Record that the review has reached consensus position that the
+review product has reached an acceptable state to be adopted</li>
+</ul>
+</div>
+<div id="pre-requisites-2" class="section level4">
+<h4>Pre-requisites:</h4>
+<ul>
+<li>All feedback has been addressed and a clean version of the review
+product prepared</li>
+</ul>
+</div>
+<div id="actions" class="section level4">
+<h4>Actions:</h4>
+<ol style="list-style-type: decimal">
+<li>Author completes release notification with the updated version of
+the product(s) and sends out to reviewers along with a clean version of
+the product.</li>
+<li>The approved document is stored in the designated repository with
+the relevant version number (e.g., v2.0) and the updated status.</li>
+</ol>
+<p>In an ideal world:</p>
+<ul>
+<li>The subject of the email starts with <em>Release notification:
+document name…</em> so that reviews can be easily found in the
+future.</li>
+</ul>
+<p><span style="color: red;">Issues:</span></p>
+<p><span style="color: red;">1. By this point, the review product should
+be fairly solid, but mistakes happen and if something has slipped
+through, in which case the reviewers may need to notify the author and
+the author update the review product and re-issue the release
+notification.</span></p>
+<hr />
+</div>
+</div>
+</div>
+<div id="additional-considerations" class="section level2">
+<h2>4. Additional Considerations</h2>
+<div id="when-is-a-review-meeting-required" class="section level3">
+<h3><strong>When is a Review Meeting Required?</strong></h3>
+<p>A review meeting should be held if:</p>
+<ul>
+<li>There are significant disagreements among reviewers.</li>
+<li>Statistical methodologies require further discussion.</li>
+<li>The document has major regulatory implications.</li>
+</ul>
+</div>
+<div id="who-should-be-involved" class="section level3">
+<h3><strong>Who Should Be Involved?</strong></h3>
+<ul>
+<li><strong>Authors</strong> – Responsible for document creation.</li>
+<li><strong>Reviewers</strong> – Senior biostatisticians, collaborators,
+subject matter experts.</li>
+<li><strong>Approvers</strong> – Project leads, quality managers, or
+regulatory officers.</li>
+</ul>
+</div>
+<div id="tools-communication" class="section level3">
+<h3><strong>Tools &amp; Communication</strong></h3>
+<ul>
+<li>Use <strong>email</strong> for notifications.</li>
+<li>Store documents in <strong>SharePoint, internal servers, or
+GitHub</strong>.</li>
+<li>Use <strong>SharePoint versioning or Git branches</strong> for
+tracking.</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="conclusion" class="section level2">
+<h2>6. Conclusion</h2>
+<p>This guidance provides a standardised approach to reviewing
+biostatistical documents, ensuring consistency, transparency, and
+regulatory compliance. By following these steps and using the templates,
+the review process can be effectively managed and documented for future
+reference.</p>
+</div>
+
+
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

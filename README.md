@@ -6,6 +6,7 @@ Currently contains the review process templates, minutes template and vignette.
 
 ## Development
 
+
 The `.Rprofile` file will load `devtools`.
 
 Use `devtools::load_all()` to source all the R scripts.
@@ -31,7 +32,14 @@ Via `use_mit_license()` which creates the license and updates DESCRIPTION file.
 
 ## Installation
 
-After cloning the package from github:
+Clone repo or download as zip:
+
+```
+git clone https://github.com/maj-biostat/statTemplates.git
+```
+
+
+After cloning/downloading the package from github, in R:
 
 ```
 library(devtools)
@@ -52,7 +60,7 @@ If you want to ensure that `statTemplates` is always loaded then include
 library(statTemplates)
 ```
 
-in your `.Rprofile` file.
+in your user level `.Rprofile` file.
 
 ## Usage
 

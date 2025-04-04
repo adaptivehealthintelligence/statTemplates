@@ -5,12 +5,12 @@ title: "Review request for review process templates"
 | <!-- -->    | <!-- -->    |
 |---|--------|
 | **Document Title:** | Review request notification, Review update notification, Release notification, Review process vignette |
-| **Document Type:** | Review process templates | 
+| **Document Type:** | Templates | 
 | **Version:** | v0.1 |   
-| **Date:** | 20250407 | 
+| **Date:** | 2025-04-07 | 
 | **Author(s):** | Mark Jones | 
 | **Reviewer(s) Assigned:** | Julie Marsh, Michael Dymock, James Toterdell, Evelyn Tay, Edward Pan, Alkim , Todd Cooper, Tom Snelling, Carly McCallum, Marie Estecourt | 
-| **Review Deadline:** | 20250430 | 
+| **Review Deadline:** | 2025-04-30 | 
 
 ## **Release Status**
 
@@ -20,7 +20,10 @@ _Current status of the document in the review lifecycle._
 
 ## **Review scope and Instructions**
 
-Review should focus on whether the review process is feasiible and what can be done to make it as convenient and efficient as possible while adding value to the qms and serving as a useful development record.
+Review should focus on whether the review process is useful and feasible.
+
++ What can be done to make it as convenient and streamlined as possible while adding value to the qms and serving as a useful development record for present and future staff?
++ What needs to be added, what can be removed, what needs clarifying, what isn't going to work, where is flexibility required?
 
 Install the package per the instructions in the github repository.
 Review the vignette through the package help (or see the attached Rmarkdown or HTML version)
@@ -30,17 +33,16 @@ The usage of the templates is described in the vignette.
 The vignette has some sections in red text that will need to be resolved.
 
 ## **Location of the Document**
-**File Path/URL:** https://github.com/maj-biostat/statTemplates
-**Version Control:** github  
+**File Path/URL:** https://github.com/maj-biostat/statTemplates  
+**Version Control:** git, github  
 
 ## **Review Meeting**
 - **Is a Review Meeting Required?** Yes
 - **Meeting Date & Time (if applicable):** [YYYY-MM-DD HH:MM Timezone]
 - **Format:** Zoom
 - **Key Discussion Points:**
-  - [List any major areas that require discussion, e.g., unresolved statistical concerns, methodology issues, data interpretation.]
-  - [Specify if reviewers are expected to present their findings in the meeting.]
-
+  - Review process from high level
+  - Discuss feedback and identify concerns and contention
 
 ## **Next Steps**
 
