@@ -10,6 +10,12 @@ The `.Rprofile` file will load `devtools`.
 
 Use `devtools::load_all()` to source all the R scripts.
 
+`devtools::document()` to run roxygen2 and update NAMESPACE.
+
+## Licensing
+
+Via `use_mit_license()` which creates the license and updates DESCRIPTION file.
+
 ## Installation
 
 After cloning the package from github:
