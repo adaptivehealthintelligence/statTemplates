@@ -4,21 +4,19 @@ title: "Review request for review process templates"
 
 | <!-- -->    | <!-- -->    |
 |---|--------|
-| **Document Title:** | [Document title] |
-| **Document Type:** | [e.g. Analysis Plan, Protocol, Trial Report, Code, Metadata spec, etc.] | 
-| **Version:** | [Version Number] |   
-| **Date:** | [YYYY-MM-DD] | 
-| **Author(s):** | [Name1, Name2] | 
-| **Reviewer(s) Assigned:** | [Name1, Name2, Name3] | 
-| **Review Deadline:** | [YYYY-MM-DD] | 
+| **Document Title:** | Review request notification, Review update notification, Release notification, Review process vignette |
+| **Document Type:** | Review process templates | 
+| **Version:** | v0.1 |   
+| **Date:** | 20250407 | 
+| **Author(s):** | Mark Jones | 
+| **Reviewer(s) Assigned:** | Julie Marsh, Michael Dymock, James Toterdell, Evelyn Tay, Edward Pan, Alkim , Todd Cooper, Tom Snelling, Carly McCallum, Marie Estecourt | 
+| **Review Deadline:** | 20250430 | 
 
 ## **Release Status**
 
 _Current status of the document in the review lifecycle._  
 
-- **Draft** – Initial version; subject to major revisions.  
-- **Revised Draft** – Incorporating feedback; may require additional review.  
-- **Released** – Approved and stored as a final version.  
+- **DRAFT** 
 
 ## **Review scope and Instructions**
 
@@ -29,6 +27,8 @@ Review the vignette through the package help (or see the attached Rmarkdown or H
 Review each of the review process templates (either the md or rendered HTML versions). 
 The usage of the templates is described in the vignette.
 
+The vignette has some sections in red text that will need to be resolved.
+
 ## **Location of the Document**
 **File Path/URL:** https://github.com/maj-biostat/statTemplates
 **Version Control:** github  
@@ -36,12 +36,14 @@ The usage of the templates is described in the vignette.
 ## **Review Meeting**
 - **Is a Review Meeting Required?** Yes
 - **Meeting Date & Time (if applicable):** [YYYY-MM-DD HH:MM Timezone]
-- **Format:** [In-person, Virtual (Zoom/Teams), Asynchronous Discussion (Email/Comments)]
+- **Format:** Zoom
 - **Key Discussion Points:**
   - [List any major areas that require discussion, e.g., unresolved statistical concerns, methodology issues, data interpretation.]
   - [Specify if reviewers are expected to present their findings in the meeting.]
 
+
 ## **Next Steps**
+
 - Reviewers to complete their review by the deadline.
 - If a meeting is scheduled, participants should prepare discussion points.
 - Comments/feedback to be provided using [method, e.g., tracked changes, review tool, GitHub issues].
