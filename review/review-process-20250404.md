@@ -20,23 +20,26 @@ _Current status of the document in the review lifecycle._
 - **Revised Draft** – Incorporating feedback; may require additional review.  
 - **Released** – Approved and stored as a final version.  
 
-## **Review Scope**
-[Provide a brief description of what should be reviewed, e.g., statistical methodology, consistency with protocol, completeness, coding best practices, data integrity checks, etc.]
+## **Review scope and Instructions**
+
+Review should focus on whether the review process is feasiible and what can be done to make it as convenient and efficient as possible while adding value to the qms and serving as a useful development record.
+
+Install the package per the instructions in the github repository.
+Review the vignette through the package help (or see the attached Rmarkdown or HTML version)
+Review each of the review process templates (either the md or rendered HTML versions). 
+The usage of the templates is described in the vignette.
 
 ## **Location of the Document**
-**File Path/URL:** [Insert file location or link to repository]
-**Version Control:** [Specify if versioning is tracked via SharePoint, GitHub, or manual versioning]  
+**File Path/URL:** https://github.com/maj-biostat/statTemplates
+**Version Control:** github  
 
 ## **Review Meeting**
-- **Is a Review Meeting Required?** [Yes/No]
+- **Is a Review Meeting Required?** Yes
 - **Meeting Date & Time (if applicable):** [YYYY-MM-DD HH:MM Timezone]
 - **Format:** [In-person, Virtual (Zoom/Teams), Asynchronous Discussion (Email/Comments)]
 - **Key Discussion Points:**
   - [List any major areas that require discussion, e.g., unresolved statistical concerns, methodology issues, data interpretation.]
   - [Specify if reviewers are expected to present their findings in the meeting.]
-
-## **Review Instructions**
-[Provide specific review instructions, including formatting requirements, statistical checks, or any particular areas of concern.]
 
 ## **Next Steps**
 - Reviewers to complete their review by the deadline.

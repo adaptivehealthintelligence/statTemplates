@@ -22,13 +22,12 @@ _Current status of the document in the review lifecycle._
 - **Revised Draft** – Incorporating feedback; may require additional review.  
 - **Released** – Approved and stored as a final version.  
 
-## **Review Scope**
-[Provide a brief description of what should be reviewed, e.g., statistical methodology, consistency with protocol, completeness, coding best practices, data integrity checks, etc.]
+## **Review Scope and Instructions**
+[Provide a description of what should be reviewed, e.g., statistical methodology, consistency with protocol, completeness, coding best practices, data integrity checks, etc.]
 
 ## **Location of the Document**
 **File Path/URL:** [Insert file location or link to repository]
 **Version Control:** [Specify if versioning is tracked via SharePoint, GitHub, or manual versioning]  
-
 ## **Review Meeting**
 - **Is a Review Meeting Required?** [Yes/No]
 - **Meeting Date & Time (if applicable):** [YYYY-MM-DD HH:MM Timezone]
@@ -36,9 +35,6 @@ _Current status of the document in the review lifecycle._
 - **Key Discussion Points:**
   - [List any major areas that require discussion, e.g., unresolved statistical concerns, methodology issues, data interpretation.]
   - [Specify if reviewers are expected to present their findings in the meeting.]
-
-## **Review Instructions**
-[Provide specific review instructions, including formatting requirements, statistical checks, or any particular areas of concern.]
 
 ## **Next Steps**
 - Reviewers to complete their review by the deadline.
