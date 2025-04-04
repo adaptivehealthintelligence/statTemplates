@@ -2,7 +2,7 @@
 
 This package contains common templates required by the biostatisticians at USyd and the Kids.
 
-Currently contains the review process templates and vignette.
+Currently contains the review process templates, minutes template and vignette.
 
 ## Development
 
@@ -11,6 +11,19 @@ The `.Rprofile` file will load `devtools`.
 Use `devtools::load_all()` to source all the R scripts.
 
 `devtools::document()` to run roxygen2 and update NAMESPACE.
+
+Git tag (annotated):
+
+```
+# create annotated tag
+git tag -a v1.4 -m "my version 1.4"
+# push tags
+git push origin --tags
+# delete local tag
+git tag -d v1.4
+# delete remote tag
+git push origin --delete <tagname>
+```
 
 ## Licensing
 
