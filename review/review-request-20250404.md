@@ -27,28 +27,27 @@ Review should focus on whether the review process is useful and feasible.
 
 Install the package per the instructions in the github repository.
 Review the vignette through the package help (or see the attached Rmarkdown or HTML version)
-Review each of the review process templates (either the md or rendered HTML versions). 
-The usage of the templates is described in the vignette.
+Create and review each of the review process templates (either the md or rendered HTML versions). 
+The concepts for applying the templates is described in the vignette.
 
 The vignette has some sections in red text that will need to be resolved.
 
 ## **Location of the Document**
-**File Path/URL:** https://github.com/maj-biostat/statTemplates  
+**File Path/URL:** https://github.com/maj-biostat/statTemplates (see versions directory for record templates to review)
 **Version Control:** git, github  
 
 ## **Review Meeting**
 - **Is a Review Meeting Required?** Yes
-- **Meeting Date & Time (if applicable):** [YYYY-MM-DD HH:MM Timezone]
-- **Format:** Zoom
+- **Meeting Date & Time (if applicable):** 2025-04-30 13:30 Perth WA
+- **Format:** Zoom https://uni-sydney.zoom.us/j/82109104859
 - **Key Discussion Points:**
   - Review process from high level
   - Discuss feedback and identify concerns and contention
 
 ## **Next Steps**
 
-- Reviewers to complete their review by the deadline.
-- If a meeting is scheduled, participants should prepare discussion points.
-- Comments/feedback to be provided using [method, e.g., tracked changes, review tool, GitHub issues].
-- Author(s) to incorporate feedback and submit for re-review if needed.
+- Reviewers to review/consider record templates, make notes etc.
+- Meet it discuss
+- Annotated files can be used to provide feedback which will be consolidated by author
 
 
