@@ -33,7 +33,7 @@ The concepts for applying the templates is described in the vignette.
 The vignette has some sections in red text that will need to be resolved.
 
 ## **Location of the Document**
-**File Path/URL:** https://github.com/maj-biostat/statTemplates (see versions directory for record templates to review)
+**File Path/URL:** https://github.com/maj-biostat/statTemplates (see versions directory for record templates to review)  
 **Version Control:** git, github  
 
 ## **Review Meeting**
