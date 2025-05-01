@@ -53,9 +53,10 @@ All above comments addressed and/or noted.
 ## **Next Steps**
 
 + Reviewers to ensure that the repository is visible at https://github.com/adaptivehealthintelligence
-+ Review attached SOP and provide comments or confirm that no comments required
-+ Review attached vignette for guidance on how to review SAP, further vignettes will be developed over time (*volunteer needed for vignette on how to review simulation report*)
-+ If updates accepted, change status to first release, otherwise address next round of commments and retain at revised draft. Review process not to be used until it reaches release status.
++ Review attached SOP and provide comments or confirm that no comments required - provide comments by email by deadline (no comments for this review accepted after deadline)
++ Review attached vignette for guidance on how to review SAP, further vignettes will be developed over time (*volunteer needed for vignette on how to review simulation report*) - provide comments by email by deadline (no comments for this review accepted after deadline)
++ If updates accepted, change status to first release and issue release notification. Otherwise, address next round of commments and retain at revised draft. 
++ Review process templates not to be used until it reaches release status.
 
 
 
