@@ -40,7 +40,7 @@ None
 
 All above comments addressed and/or noted.
 
-[MJ] Minor modification to update template sections, specifically replaced Changes Since Notification with Change Summary.
+[MJ] Minor modification to update template sections, specifically replaced Changes Since Notification with Change Summary.  
 [MJ] Minor modification to update template to include reviewers who attended review/provided comments.
 
 ## **Revised Timeline (if applicable)**
@@ -49,7 +49,7 @@ All above comments addressed and/or noted.
 
 ## **Location of the Document**
 
-**Updated File Path:** https://github.com/adaptivehealthintelligence/statTemplates 
+**Updated File Path:** https://github.com/adaptivehealthintelligence/statTemplates   
 **Updated Version:** Tag: v0.3 
 
 ## **Next Steps**
