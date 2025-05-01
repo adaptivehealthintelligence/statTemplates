@@ -10,6 +10,7 @@ title: "Review update notification for review process templates"
 | **Date:** | 2025-04-30 | 
 | **Author(s):** | Mark Jones | 
 | **Reviewer(s) Assigned:** | Julie Marsh, Michael Dymock, James Toterdell, Evelyn Tay, Parveen Fathima, Edward Pan, Alkim Ozaygen, Todd Cooper, Tom Snelling, Carly McCallum, Marie Estecourt | 
+| **Reviewer(s) Attending Review:** | Julie Marsh, James Toterdell, Evelyn Tay, Parveen Fathima, Edward Pan, Todd Cooper, Tom Snelling | 
 | **Review Deadline:** | 2025-04-30 | 
 
 ## **Release Status Update**
@@ -40,6 +41,7 @@ None
 All above comments addressed and/or noted.
 
 [MJ] Minor modification to update template sections, specifically replaced Changes Since Notification with Change Summary.
+[MJ] Minor modification to update template to include reviewers who attended review/provided comments.
 
 ## **Revised Timeline (if applicable)**
 

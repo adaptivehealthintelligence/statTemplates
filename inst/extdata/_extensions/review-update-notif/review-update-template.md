@@ -12,6 +12,7 @@ title: "Review update notification"
 | **Date:** | [YYYY-MM-DD] | 
 | **Author(s):** | [Name1, Name2] | 
 | **Reviewer(s) Assigned:** | [Name1, Name2, Name3] | 
+| **Reviewer(s) Attending Review:** | [Name1, Name2, Name3] | 
 | **Review Deadline:** | [YYYY-MM-DD] | 
 
 ## **Release Status Update**
