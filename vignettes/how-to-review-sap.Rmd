@@ -1,0 +1,88 @@
+---
+title: "How to: review statistical analysis plans"
+date: "April 4, 2025"
+author: Mark Jones
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{How to: review statistical analysis plans}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+colorize <- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{%s}", color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'>%s</span>", color,
+      x)
+  } else x
+}
+```
+
+```{r setup}
+library(statTemplates)
+```
+
+
+## Introduction
+
+There isn't a singular best or ideal way to review a statistical analysis plan (SAP) because the requirements for a SAP will depend on many factors that relate to the specifics of the study design, the inferential framework used, the current *en-vogue* with regards to content etc.
+Therefore, a reductionist approach to the process may be counter-productive in that it could induce a checkbox mentality rather than the deep thought that is required.
+
+Despite the complex and variable nature of SAPs, we would still like to have consistency in the way that people review such documents.
+To this end, some general instruction and background reading is provided.
+In time, an analysis plan template will be formalised and this will hopefully make both the preparation and review processes simpler for all those involved.
+
+## What is a SAP?
+
+Quoting ICH E9, a SAP "contains a more technical and detailed elaboration of of the principal features of the analysis described in the protocol, and includes detailed procedures for executing the statistical analysis of the primary and secondary variables and other data."
+Fundamentally, that means that a SAP should contain sufficient detail on the design and analytic approach for a newcomer to be stand a fighting chance of being able to implement the analyses and come out with results that are as intended.
+But more formally, SAPs are a vital component of transparent, objective, rigorous, reproducible research and it should be completed before the study is unblinded.
+
+## What should be in a SAP?
+
+While a SAP may be for a purely internal audience, best practice is that SAPs can be made publically available and are ideally publishable as standalone documents.
+To publish a SAP may require journal-specific content to be included, however, there are some key elements that should be included in a SAP, irrespective of whether it is to be published or not.
+
+To get an understanding of the specific details that should be included, read SAPs that have previously been developed in the group.
+Some of these are publically available, but for others you will need to ask the analysts involved to get access.
+Familiarity will lead to insight into what sections should be included in a SAP as well as what level of detail is expected.
+
+As an alternative guidance, if you google for "SAP analysis plan templates", then you will get a lot of options for the kinds of things that should be included.
+Google will also provide you with any number of analysis plan examples if you ask it.
+
+All that said, a few important references are listed below:
+
++ Stevens et al 2023 A template for the authoring of statistical analysis plans [doi:10.1016/j.conctc.2023.101100](https://doi.org/10.1016/j.conctc.2023.101100)
++ Gamble et al 2017 Guidelines for the Content of Statistical Analysis Plans
+in Clinical Trials [doi:10.1001/jama.2017.18556](https://doi.org/10.1001/jama.2017.18556)
++ Dimairo et al 2017 The Adaptive designs CONSORT Extension (ACE) statement: a checklist with explanation and elaboration guideline for reporting randomised trials that use an adaptive design
+ [doi:10.1136/bmj.m115](https://doi.org/10.1136/bmj.m115)
++ FDA 2019 Adaptive Designs for Clinical Trials of Drugs and Biologics Guidance for Industry [https://www.fda.gov/regulatory-information/search-fda-guidance-documents/adaptive-design-clinical-trials-drugs-and-biologics-guidance-industry](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/adaptive-design-clinical-trials-drugs-and-biologics-guidance-industry)
++ EU-PEARL (Patient-centric clinical trial platforms) Statistical Analysis Plan (SAP) template [https://eu-pearl.eu/eu-pearls-suite-of-master-protocol-templates/](https://eu-pearl.eu/eu-pearls-suite-of-master-protocol-templates/)
++ Estimands - start here: [https://www.mrcctu.ucl.ac.uk/our-research/methodology/analysis/estimands/](https://www.mrcctu.ucl.ac.uk/our-research/methodology/analysis/estimands/)
+
+If you have not reviewed the above list of documents, then you will probably find it extremely helpful to do that before you start to prepare/review a SAP.
+
+## Reviewing a SAP
+
+Here are some general points that you can follow to help you review a SAP:
+
+1. Obtain and review the protocol
+2. If necessary, clarify trial objectives, endpoints, and estimands.
+3. Gather prior SAP versions and prior reviews (if iterative).
+4. Assemble relevant simulation studies, statistical justifications, and operating characteristics reports.
+5. Read the SAP end-to-end to understand scope, structure, and planned analyses.
+6. Note alignment or deviations from the protocol and estimands.
+7. Confirm statistical methods are implementable within available software and platforms.
+8. Check for clarity in planned analytical approach and analysis workflow descriptions.
+
+The above is a starting point and additional guidance for reviewing a SAP will be provided as the present R package evolves.
+
+
