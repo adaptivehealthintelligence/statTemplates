@@ -4,7 +4,7 @@ date: "April 4, 2025"
 author: Mark Jones
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{review-process}
+  %\VignetteIndexEntry{Review Process for Biostatistical Products}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -89,8 +89,8 @@ For releases, the form would be v1.0 and for subsequent drafts, v1.1, v1.2 etc t
 As a general heuristic, use some sensible structured naming convention, version and date as a belt-and-braces approach but either or will probably suffice, e.g.:
 
   ```
-  [DocumentType]_[StudyName]_[Version]_[YYYYMMDD].[ext]
-  Example: SAP_Trial123_v0.1_20250325.docx
+  [StudyName]_[DocumentType]_[Version]_[YYYYMMDD].[ext]
+  Example: Trial123_SAP_v0.1_20250325.docx
   ```
 
 `r colorize("Note:", "red")`
