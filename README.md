@@ -64,7 +64,7 @@ in your user level `.Rprofile` file.
 
 ## Usage
 
-See the vignettes for process guidance.
+See the vignettes for process guidance and review steps for analysis plans.
 
 ## Todo 
 
