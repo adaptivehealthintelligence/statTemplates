@@ -47,8 +47,8 @@ All above comments addressed and/or noted.
 
 ## **Location of the Document**
 
-**Updated File Path:** [TODO - Insert updated file location or repository link]  
-**Updated Version:** [TODO - v1.2, Git commit ID]  
+**Updated File Path:** https://github.com/adaptivehealthintelligence/statTemplates 
+**Updated Version:** Tag: v0.3 
 
 ## **Next Steps**
 
