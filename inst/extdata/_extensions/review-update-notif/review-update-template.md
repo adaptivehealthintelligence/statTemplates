@@ -18,13 +18,13 @@ title: "Review update notification"
 **Previous Status:** [Select: Draft / Revised Draft / Released]  
 **New Status:** [Select: Draft / Revised Draft / Released]  
 
-## **Update Summary**
+## **Review Summary**
 
 [Summarise the outcome of the review (don't need to give a line by line account) especially any major issues that were identified. Highlight actions, updates that were requested.]
 
-## **Changes Since Notification**
+## **Change Summary:**
 
-[If applicable, describe major modifications made since the review was first initiated.]
+[Summarise changes adopted.]
 
 ## **Revised Timeline (if applicable)**
 
@@ -34,7 +34,6 @@ title: "Review update notification"
 
 **Updated File Path:** [Insert updated file location or repository link]  
 **Updated Version:** [e.g., v1.2, Git commit ID]  
-**Change Summary:** [Briefly describe major changes made]  
 
 ## **Next Steps**
 
