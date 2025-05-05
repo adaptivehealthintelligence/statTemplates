@@ -18,6 +18,8 @@ Git tag (annotated):
 ```
 # create annotated tag
 git tag -a v1.4 -m "my version 1.4"
+# show tag and msg
+git tag -n5
 # push tags
 git push origin --tags
 # delete local tag
