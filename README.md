@@ -35,7 +35,7 @@ Via `use_mit_license()` which creates the license and updates DESCRIPTION file.
 Clone repo or download as zip:
 
 ```
-git clone https://github.com/maj-biostat/statTemplates.git
+git clone https://github.com/adaptivehealthintelligence/statTemplates.git
 ```
 
 
@@ -51,7 +51,7 @@ or just install direct from github.
 
 ```
 install.packages(c("devtools"))
-devtools::install_github("maj-biostat/statTemplates")
+devtools::install_github("adaptivehealthintelligence/statTemplates")
 ```
 
 If you want to ensure that `statTemplates` is always loaded then include 
