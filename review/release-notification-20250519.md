@@ -26,7 +26,7 @@ This notification records the release of the stats product review process templa
 
 SOP
 
-+ Sharepoint > AHI Team > Documents > General > 01. Admin > 04. Resources > 02. SOPs,Guidance & Templates > 02. Approved
++ Sharepoint > AHI Team > Documents > General > 01. Admin > 04. Resources > 02. SOPs,Guidance & Templates > 02. Approved >  6.1.01_Stats_review_process_V1.docx
 
 Template R package
 
