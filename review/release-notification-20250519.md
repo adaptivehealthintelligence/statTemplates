@@ -36,6 +36,10 @@ Template R package
 
 + https://github.com/adaptivehealthintelligence/statTemplates/releases/tag/v0.3
 
+release records stored under:
+
++ https://github.com/adaptivehealthintelligence/statTemplates/tree/main/review
+
 ## **Finalization Confirmation**
 
 - All review comments addressed  
